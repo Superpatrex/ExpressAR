@@ -10,14 +10,14 @@ import signal
 import atexit
 from fer import FER
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 detector = FER()
 
 has_face_been_detected_long_enough = 0
 threshold = 20
 
 TCP_HOST = '0.0.0.0'
-TCP_PORT = 16
+TCP_PORT = 8081
 SEND_INTERVAL = 1.0
 
 DEBUG = True

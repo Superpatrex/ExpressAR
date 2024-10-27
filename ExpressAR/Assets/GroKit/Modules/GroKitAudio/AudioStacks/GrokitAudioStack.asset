@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fff5599b742bd924fa95c8a53f8d56a7, type: 3}
+  m_Name: GrokitAudioStack
+  m_EditorClassIdentifier: 
+  isLooper: 0
+  defaultTemplate: {fileID: 0}
+  clipStack:
+  - delay: 0.1
+    myClips:
+    - {fileID: 8300000, guid: 9a6d738025ed59f4fb946bb59c20e774, type: 3}
+    template: {fileID: 0}
+    alterations:
+      alterPitch: 0
+      randomPitch: {x: 0, y: 0}
+      alterVolume: 0
+      randomVolume: {x: 0, y: 0}
+    shouldFollow: 0
+    randomWeights: 35
+  - delay: 0.2
+    myClips:
+    - {fileID: 8300000, guid: 731ddbfbc25929648981eda0b4e0c865, type: 3}
+    template: {fileID: 0}
+    alterations:
+      alterPitch: 0
+      randomPitch: {x: 0, y: 0}
+      alterVolume: 0
+      randomVolume: {x: 0, y: 0}
+    shouldFollow: 0
+    randomWeights: 0
+  - delay: 0.3
+    myClips:
+    - {fileID: 8300000, guid: 4fbcbad45179ab443a8580da39a7a6dc, type: 3}
+    template: {fileID: 0}
+    alterations:
+      alterPitch: 0
+      randomPitch: {x: 0, y: 0}
+      alterVolume: 0
+      randomVolume: {x: 0, y: 0}
+    shouldFollow: 0
+    randomWeights: 0

@@ -4,8 +4,8 @@ import struct
 import time
 import json
 
-TCP_HOST = '0.0.0.0'
-TCP_PORT = 16
+TCP_HOST = 'localhost'
+TCP_PORT = 8081
 
 def receive_data_from_server():
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

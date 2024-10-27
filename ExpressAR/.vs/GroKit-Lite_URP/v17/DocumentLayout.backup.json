@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "U:\\UnityProjects\\GroKit-Lite_URP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FFD4F407-BD09-C521-D2AF-6B3DD7ADC593}|Assembly-CSharp-Editor.csproj|u:\\unityprojects\\grokit-lite_urp\\assets\\grokit\\core\\zinternal\\editor\\coreeditorshortcuts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFD4F407-BD09-C521-D2AF-6B3DD7ADC593}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\grokit\\core\\zinternal\\editor\\coreeditorshortcuts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BB3F7E4-7C91-6F9B-133F-03E2B1D99772}|Assembly-CSharp.csproj|u:\\unityprojects\\grokit-lite_urp\\assets\\grokit\\core\\components\\debug\\debug_keyevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BB3F7E4-7C91-6F9B-133F-03E2B1D99772}|Assembly-CSharp.csproj|solutionrelative:assets\\grokit\\core\\components\\debug\\debug_keyevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CoreEditorShortcuts.cs",
+              "DocumentMoniker": "U:\\UnityProjects\\GroKit-Lite_URP\\Assets\\GroKit\\Core\\zInternal\\Editor\\CoreEditorShortcuts.cs",
+              "RelativeDocumentMoniker": "Assets\\GroKit\\Core\\zInternal\\Editor\\CoreEditorShortcuts.cs",
+              "ToolTip": "U:\\UnityProjects\\GroKit-Lite_URP\\Assets\\GroKit\\Core\\zInternal\\Editor\\CoreEditorShortcuts.cs",
+              "RelativeToolTip": "Assets\\GroKit\\Core\\zInternal\\Editor\\CoreEditorShortcuts.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAADwv2QAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T18:37:17.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DEBUG_KeyEvent.cs",
+              "DocumentMoniker": "U:\\UnityProjects\\GroKit-Lite_URP\\Assets\\GroKit\\Core\\Components\\Debug\\DEBUG_KeyEvent.cs",
+              "RelativeDocumentMoniker": "Assets\\GroKit\\Core\\Components\\Debug\\DEBUG_KeyEvent.cs",
+              "ToolTip": "U:\\UnityProjects\\GroKit-Lite_URP\\Assets\\GroKit\\Core\\Components\\Debug\\DEBUG_KeyEvent.cs",
+              "RelativeToolTip": "Assets\\GroKit\\Core\\Components\\Debug\\DEBUG_KeyEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T15:46:24.471Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
