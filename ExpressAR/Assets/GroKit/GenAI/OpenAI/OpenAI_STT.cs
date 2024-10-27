@@ -28,7 +28,6 @@ namespace AICore3lb
 
             if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
             {
-                Debug.LogError(request.downloadHandler.text);
                 aiFailed.Invoke(request.downloadHandler.text);
             }
             else

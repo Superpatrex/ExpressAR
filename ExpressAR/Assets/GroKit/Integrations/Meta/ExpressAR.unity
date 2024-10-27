@@ -755,7 +755,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 97.8, y: 22.37, z: 0.02}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &170468368
 MonoBehaviour:
@@ -1268,6 +1268,7 @@ MonoBehaviour:
   curSelectedMenu: 
   openAI_TTS: {fileID: 892402401}
   incorrectSound: {fileID: 8300000, guid: 7947c25d88af9c84aae69ce0fe9544b6, type: 3}
+  canPressButton: 1
 --- !u!1 &380440572
 GameObject:
   m_ObjectHideFlags: 0
@@ -2066,7 +2067,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 93.88, y: 23.3, z: 0.06}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &561355031
 MonoBehaviour:
@@ -3097,6 +3098,7 @@ MonoBehaviour:
   openAI_ImageGen: {fileID: 101050210}
   prompt: 
   aiAgentPrompt: 
+  canTalkToAIAgent: 1
 --- !u!1 &1155895340
 GameObject:
   m_ObjectHideFlags: 0
@@ -3485,7 +3487,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 93.88, y: 23.3, z: 0.06}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1191524763
 MonoBehaviour:
@@ -3787,7 +3789,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 13.08, y: -11, z: 0.02}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1301632154
 MonoBehaviour:
@@ -4157,7 +4159,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 95, y: 21.77, z: 0.04}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1487103592
 MonoBehaviour:
@@ -4456,7 +4458,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 99.8, y: 21.13, z: 0.04}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1731395109
 MonoBehaviour:
@@ -4918,7 +4920,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 10.83, y: 9.52, z: 0.02}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2019228009
 MonoBehaviour:
@@ -5143,7 +5145,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 99.8, y: 21.13, z: 0.04}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2032111368
 MonoBehaviour:

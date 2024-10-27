@@ -15,6 +15,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private string curSelectedMenu;
     [SerializeField] private OpenAI_TTS openAI_TTS;
     [SerializeField] private AudioClip incorrectSound;
+    [SerializeField] private bool canPressButton = true;
 
 
     void Start() 
@@ -29,16 +30,16 @@ public class MenuManager : MonoBehaviour
 
     public void OnEnvironmentButtonClicked()
     {
+        openAI_TTS._Speak("Environment Mode Selected");
         curSelectedMenu = "enviromentMenu";
-        Debug.LogWarning("Environmnet Button Clicked");
         turnOffMainMenu();
         GameManager.instance.StartGame();
     }
 
     public void OnDiffusionButtonClicked()
     {
+        openAI_TTS._Speak("Diffusion Mode Selected");
         curSelectedMenu = "diffusionMenu";
-        Debug.LogWarning("Diffusion Button Clicked");
         turnOffMainMenu();
         DiffusionModelGame.instance.StartGame();
     }
@@ -69,21 +70,36 @@ public class MenuManager : MonoBehaviour
 
     public void goBack()
     {
+        if (!canPressButton) return;
+
+        playButtonClicked();
         if (curSelectedMenu == "enviromentMenu")
         {
+            GameManager.instance.EndGame();
             enviromentMenu.SetActive(false);
             mainMenu.SetActive(true);
             openAI_TTS._Speak("Returning to the main menu");
+            curSelectedMenu = "mainMenu";
         }
         else if (curSelectedMenu == "diffusionMenu")
         {
+            DiffusionModelGame.instance.EndGame();
             diffusionMenu.SetActive(false);
             mainMenu.SetActive(true);
             openAI_TTS._Speak("Returning to the main menu");
+            curSelectedMenu = "mainMenu";
         }
         else
         {
-            audioSource.PlayOneShot(incorrectSound);
+            openAI_TTS._Speak("Sorry you cannot go back from the main menu");
         }
+
+        StartCoroutine(WaitToPressButtonAfterDelay(3));
+    }
+
+    public IEnumerator WaitToPressButtonAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        canPressButton = true;
     }
 }

@@ -170,14 +170,6 @@ public class GameManager : MonoBehaviour
         totalMenu.SetActive(true);
     }
 
-    public void EndGame()
-    {
-        isReadyForGame = false;
-        HideButtons();
-        HideGameOptions();
-        totalMenu.SetActive(false);
-    }
-
     public void TrySelection(TMP_Text text)
     {
         if (isSelectionInProgress) return;
@@ -196,11 +188,20 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            audioSource.PlayOneShot(failureSound);
             openAI_speaker.GetContentAndSpeak(rightAnswerString);
         }
         
         StartCoroutine(ResetSelectionFlagAfterDelay(15));
+    }
+
+    public void EndGame()
+    {
+        isReadyForGame = false;
+        HideButtons();
+        HideGameOptions();
+        correctOptionIndex = -1;
+        rightAnswerString = null;
+        openAI_TTS._StopAudio();
     }
 
     private IEnumerator ResetSelectionFlagAfterDelay(float delay)

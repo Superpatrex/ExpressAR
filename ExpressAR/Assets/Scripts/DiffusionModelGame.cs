@@ -55,6 +55,7 @@ public class DiffusionModelGame : MonoBehaviour
 
     public void Update()
     {
+        Debug.Log("isReadyForGame: " + isReadyForGame + " " + "hasFaceBeenSelected: " + hasFaceBeenSelected);
         if (isReadyForGame && !hasFaceBeenSelected)
         {
             totalMenu.SetActive(true);
@@ -161,9 +162,12 @@ public class DiffusionModelGame : MonoBehaviour
     public void EndGame()
     {
         isReadyForGame = false;
+        rightAnswerString = null;
+        hasFaceBeenSelected = false;
         HideButtons();
         HideGameOptions();
         totalMenu.SetActive(false);
+        openAI_TTS._StopAudio();
     }
 
     public void TrySelection(TMP_Text text)
@@ -185,7 +189,6 @@ public class DiffusionModelGame : MonoBehaviour
         }
         else
         {
-            audioSource.PlayOneShot(failureSound);
             openAI_speaker.GetContentAndSpeak(rightAnswerString);
         }
         
